@@ -7,7 +7,7 @@
   <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
 <p>
-  <strong>Title:</strong>
+
   <%= @video.title %>
 </p>
 
@@ -17,7 +17,7 @@
     class="video-js vjs-big-play-centered"
     controls
     preload="auto"
-    width="640"
+    width="469"
     height="264"
     poster=" <%= url_for(@video.thumbnail)%> "
     data-setup="{}"
@@ -34,11 +34,8 @@
   </video>
 
 
-<p>
-  <strong>Description:</strong>
-  <%= @video.description %>
-</p>
 
 
  <script src="https://vjs.zencdn.net/7.5.5/video.js"></script>
+ <%= link_to 'Back', videos_path %>
 
